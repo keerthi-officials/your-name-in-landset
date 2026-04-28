@@ -1,3 +1,7 @@
+"use client"
+import { LetterCard } from "@/components/letter-card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { letterData } from "@/data/letters";
 import Image from "next/image";
 import { useState } from "react";
@@ -10,17 +14,32 @@ export default function Home() {
   const getVariant = (posIndex: number, letter: string) => {
     const customIndex = variantIndices[posIndex] ?? 0
     const variants = letterData[letter.toLowerCase()]
-return { variantIndex: customIndex % variants.length, variant: variants[customIndex % variants.length] }
+    return { variantIndex: customIndex % variants.length, variant: variants[customIndex % variants.length] }
   }
 
   const cycleVariant = (posIndex: number, letter: string) => {
     const max = letterData[letter.toLowerCase()].length
-    setVariantIndices(prev => ({ ...prev, [posIndex]: ((prev[posIndex] ?? 0) + 1) % max}))
+    setVariantIndices(prev => ({ ...prev, [posIndex]: ((prev[posIndex] ?? 0) + 1) % max }))
   }
 
   return (
-     <div className="min-h-screen">
-      <div className="flex flex-wrap gap-2 justify-center"></div>
-     </div>
+    <div className="min-h-screen">
+      <div className="flex flex-wrap gap-2 justify-center">
+        {letters.map((letter, i) => {
+          const { variantIndex, variant } = getVariant(i, letter)
+          return (
+            <LetterCard
+              key={i}
+              letter={letter.toLowerCase()}
+              variantIndex={variantIndex}
+              variant={variant}
+              onClick={() => cycleVariant(i, letter)}
+            />
+          )
+        })}
+      </div>
+      <Input type="text" onChange={(n) => setName(n.target.value)} value={name} />
+      <Button onClick={() => setName(name)} />
+    </div>
   );
 }
