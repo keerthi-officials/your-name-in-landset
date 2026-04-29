@@ -31,8 +31,35 @@ export default function Home() {
     setVariantIndices({})
   }
 
-  const handleDownload = () => {
-    console.log(name)
+  const handleDownload = async () => {
+    if (!letters.length) return
+    const gap = 8
+    const width = 200
+    const height = Math.round(width * 19 / 8)
+
+    const canvas = document.createElement('canvas')
+    canvas.width = letters.length * width + (letters.length - 1) * gap
+    canvas.height = height
+    const ctx = canvas.getContext('2d')!
+
+    await Promise.all(letters.map((letter, i) => {
+      return new Promise<void>((resolve) => {
+        const { variantIndex } = getVariant(i, letter)
+        const img = new window.Image()
+        img.crossOrigin = 'anonymous'
+        img.onload = () => {
+          ctx.drawImage(img, i * (width + gap), 0, width, height)
+          resolve()
+        }
+        img.onerror = () => resolve()
+        img.src = `https://science.nasa.gov/specials/your-name-in-landsat/images/${letter.toLowerCase()}_${variantIndex}.jpg`
+      })
+    }))
+
+    const link = document.createElement('a')
+    link.download = `${submittedName}-in-landsat.png`
+    link.href = canvas.toDataURL('image/png')
+    link.click()
   }
 
   return (
