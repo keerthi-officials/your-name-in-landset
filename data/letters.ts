@@ -1,11 +1,13 @@
-export const letterData: Record<string, { location: string; lat: string; lng: string }[]> = {
+export const letterData: Record<string, { location: string; lat: string; lng: string, link?: string }[]> = {
     a: [
-        { location: "xyz", lat: "", lng: "" },
-        { location: "xyz", lat: "", lng: "" }
+        { location: "Hickman, Kentucky", lat: "36°35'20.8 N", lng: "89°20'26.9 W", link: "https://www.google.com/maps/place/36%C2%B035'20.8%22N+89%C2%B020'26.9%22W/@36.5689533,-89.4212718,11.38z/data=!4m4!3m3!8m2!3d36.5891111!4d-89.3408056?entry=ttu" },
+        { location: "Farm Island, Maine", lat: "45°43'43.8 N ", lng: "69°46'08.9 W", link: "https://www.google.com/maps/place/45%C2%B043'45.4%22N+69%C2%B046'04.7%22W/@45.7292113,-69.7763592,6123m/data=!3m1!1e3!4m4!3m3!8m2!3d45.729275!4d-69.76798?entry=ttu" },
+        { location: "Lake Guakhmaz, Azerbaijan", lat: "40°39'50.8 N", lng: "47°06'36.2 E", link: "https://maps.app.goo.gl/tnrVaiMuFiGacH746" },
+        { location: "Yukon Delta, Alaska", lat: "62°33'17.7 N", lng: "164°56'10.3 W", link: "https://maps.app.goo.gl/AuARuTMTcT2ugLnq5" },
+        { location: "Lake Mjøsa, Norway", lat: "60°45'52.7 N", lng: "53°47'52.8 E", link: "https://www.google.com/maps/place/36%C2%B035'20.8%22N+89%C2%B020'26.9%22W/@36.5689533,-89.4212718,11.38z/data=!4m4!3m3!8m2!3d36.5891111!4d-89.3408056?entry=ttu" }
     ],
     b: [
         { location: "xyz", lat: "", lng: "" },
-        { location: "xyz", lat: "", lng: "" }
     ],
     c: [
         { location: "xyz", lat: "", lng: "" },

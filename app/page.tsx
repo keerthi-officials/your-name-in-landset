@@ -3,13 +3,14 @@ import { LetterCard } from "@/components/letter-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { letterData } from "@/data/letters";
+import Link from "next/link";
 import { useRef, useState } from "react";
 
 export default function Home() {
   const [name, setName] = useState("")
   const [submittedName, setSubmittedName] = useState("keerthi")
   const [variantIndices, setVariantIndices] = useState<Record<number, number>>({})
-  const [hoveredVariant, setHoveredVariant] = useState<{ location: string; lat: string; lng: string } | null>(null)
+  const [hoveredVariant, setHoveredVariant] = useState<{ location: string; lat: string; lng: string, link?:string } | null>(null)
   const displayRef = useRef<HTMLDivElement>(null)
 
   const letters = submittedName.toUpperCase().replace(/[^A-Z]/g, '').split('').filter(Boolean)
@@ -89,12 +90,12 @@ export default function Home() {
         )}
       </div>
 
-      <div className="text-center pb-2 h-10">
+      <div className="text-center pb-2 h-20">
         {hoveredVariant && (
-          <>
-            <p className="text-white text-sm font-semibold">{hoveredVariant.location}C</p>
-            <p className="text-white/60 text-xs">{hoveredVariant.lat} {hoveredVariant.lng}</p>
-          </>
+          <div className="text-center min-h-10 overflow-visible">
+            <p className="text-black text-lg font-semibold">{hoveredVariant.location}</p>
+            <Link href={`${hoveredVariant.link}`}><p className="text-foreground/60 text-md">{hoveredVariant.lat} {hoveredVariant.lng}</p></Link>
+          </div >
         )}
       </div>
 
