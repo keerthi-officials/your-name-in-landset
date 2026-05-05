@@ -1,23 +1,23 @@
 "use client"
 import Image from "next/image";
 
-export function LetterCard({ letter, letters, variantIndex, onClick, onHover, onLeave }: {
+export function LetterCard({ letter, letters, variantIndex, onClick, onHover }: {
     letter: string,
     letters: string[],
     variantIndex: number,
     onClick: () => void
     onHover: () => void
-    onLeave: () => void
 }) {
     const letterSize = letters.length > 20 ? "text-xs px-0.5 py-0.5" : letters.length > 10 ? "text-sm px-2 py-1" : "text-xl px-3 py-1"
     return (
         <div className="relative group cursor-pointer flex-1 min-w-0 aspect-8/19 max-w-46 hover:scale-108 duration-400 transition-all"
-            onClick={onClick} onMouseEnter={onHover} 
-            onMouseLeave={onLeave}>
+            onClick={onClick} onMouseEnter={onHover}
+        >
             <Image
                 src={`https://science.nasa.gov/specials/your-name-in-landsat/images/${letter}_${variantIndex}.jpg`}
                 alt={`${letter}_${variantIndex}`}
-                fill
+                fill loading="eager"
+                sizes="100vw"
                 className="object-cover rounded-sm"
             />
             <div className="absolute inset-0 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-end p-2">

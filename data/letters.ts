@@ -42,8 +42,8 @@ export const letterData: Record<string, { location: string; lat: string; lng: st
         { location: "xyz", lat: "", lng: "" }
     ],
     k: [
-        { location: "xyz", lat: "", lng: "" },
-        { location: "xyz", lat: "", lng: "" }
+        { location: "Sirmilik National Park, Canada", lat: "72°05'01.1 N", lng: "76°48'42.9 W", link: "https://www.google.com/maps/place/72%C2%B005'01.1%22N+76%C2%B048'42.9%22W/@72.1091739,-77.3683173,70440m/data=!3m1!1e3!4m12!1m7!3m6!1s0x4e17b70e5a3af4b1:0x1e43c34c0c4309a2!2sSirmilik+National+Park!8m2!3d73.3652488!4d-79.0152625!16zL20vMDZmeDZk!3m3!8m2!3d72.083628!4d-76.811917?entry=ttu" },
+        { location: "Golmud, China", lat: "35°36'46.3 N ", lng: "95°03'45.9 E", link: "https://maps.app.goo.gl/UweKoxYbPbz1xbY38" }
     ],
     l: [
         { location: "xyz", lat: "", lng: "" },

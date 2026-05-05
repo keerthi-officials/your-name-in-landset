@@ -80,9 +80,15 @@ export default function Home() {
                   letters={letters}
                   letter={letter.toLowerCase()}
                   variantIndex={variantIndex}
-                  onClick={() => cycleVariant(i, letter)}
+                  onClick={() => {
+                    const max = letterData[letter.toLowerCase()].length
+                    const currentIndex = variantIndices[i] ?? 0
+                    const nextIndex = (currentIndex + 1) % max
+                    const nextVariant = letterData[letter.toLowerCase()][nextIndex]
+                    setVariantIndices(prev => ({ ...prev, [i]: nextIndex }))
+                    setHoveredVariant(nextVariant)
+                  }}
                   onHover={() => setHoveredVariant(variant)}
-                  onLeave={() => setHoveredVariant(null)}
                 />
               )
             })}
