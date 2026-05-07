@@ -84,8 +84,30 @@ export const letterData: Record<
     },
   ],
   e: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Firn-filled Fjords, Tibet",
+      lat: "29°15'46.9 N",
+      lng: "96°19'03.8 E",
+      link: "https://www.google.com/maps/place/29%C2%B015'46.9%22N+96%C2%B019'03.8%22E/@29.2803917,96.192327,59727m/data=!3m1!1e3!4m13!1m8!3m7!1s0x3761317e9c4a2cc1:0x1fc12c628413da99!2sTibet,+China!3b1!8m2!3d29.6472399!4d91.11745!16zL20vMGY4bmY!3m3!8m2!3d29.26304!4d96.317724!5m1!1e4?entry=ttu",
+    },
+    {
+      location: "Sea of Okhotsk",
+      lat: "54°42'50.3 N",
+      lng: "136°34'20.4 E",
+      link: "https://www.google.com/maps/place/29%C2%B015'46.9%22N+96%C2%B019'03.8%22E/@29.2803917,96.192327,59727m/data=!3m1!1e3!4m13!1m8!3m7!1s0x3761317e9c4a2cc1:0x1fc12c628413da99!2sTibet,+China!3b1!8m2!3d29.6472399!4d91.11745!16zL20vMGY4bmY!3m3!8m2!3d29.26304!4d96.317724!5m1!1e4?entry=ttu",
+    },
+    {
+      location: "Bellona Plateau",
+      lat: "20°30'00.0 S",
+      lng: "158°30'00.0 E",
+      link: "https://www.google.com/maps/place/20%C2%B030'00.0%22S+158%C2%B030'00.0%22E/@-16.8094327,154.1932946,5.04z/data=!4m4!3m3!8m2!3d-20.5!4d158.5?entry=ttu",
+    },
+    {
+      location: "Breiðamerkurjökull Glacier, Iceland",
+      lat: "64°05'45.0 N",
+      lng: "16°21'45.6 W",
+      link: "https://maps.app.goo.gl/6xoCUtSu99xvXZ8S6",
+    },
   ],
   f: [
     {
@@ -124,12 +146,56 @@ export const letterData: Record<
     },
   ],
   i: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Borgarbyggð, Iceland",
+      lat: "64°45'46.4 N",
+      lng: "22°27'28.0 W",
+      link: "https://www.google.com/maps/place/64%C2%B045'46.4%22N+22%C2%B027'28.0%22W/@64.7585629,-22.5872018,27545m/data=!3m1!1e3!4m4!3m3!8m2!3d64.7628889!4d-22.4577778?entry=ttu",
+    },
+    {
+      location: "Canandaigua Lake, New York",
+      lat: "42°47'11.0 N",
+      lng: "77°42'58.1 W",
+      link: "https://www.google.com/maps/place/64%C2%B045'46.4%22N+22%C2%B027'28.0%22W/@64.7585629,-22.5872018,27545m/data=!3m1!1e3!4m4!3m3!8m2!3d64.7628889!4d-22.4577778?entry=ttu",
+    },
+    {
+      location: "Etosha National Park, Namibia",
+      lat: "18°29'15.2 S",
+      lng: "16°10'14.6 E",
+      link: "https://maps.app.goo.gl/s6ujVrXGJKnbrppH7",
+    },
+    {
+      location: "Djebel Ouarkziz, Morocco",
+      lat: "28°18'01.5 N",
+      lng: "10°33'58.5 W",
+      link: "https://maps.app.goo.gl/osEU3NnVtShw6CBN9",
+    },
+    {
+      location: "Holuhraun Ice Field, iceland",
+      lat: "64°51'11.2 N",
+      lng: "16°49'37.2 W",
+      link: "https://maps.app.goo.gl/ys3A1PGKvF6MCGWP7",
+    },
   ],
   j: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Great Barrier Reef",
+      lat: "18°20'55.3 S",
+      lng: "146°50'51.4 E",
+      link: "https://www.google.com/maps/place/18%C2%B020'55.3%22S+146%C2%B050'51.4%22E/@-18.3013843,146.8642487,39611m/data=!3m1!1e3!4m4!3m3!8m2!3d-18.3487!4d146.8476?entry=ttu",
+    },
+    {
+      location: "Karakaya Dam, Turkey",
+      lat: "38°29'37.7 N",
+      lng: "38°26'39.5 E",
+      link: "https://www.google.com/maps/place/38%C2%B029'37.7%22N+38%C2%B026'39.5%22E/@38.5489247,38.208631,112968m/data=!3m1!1e3!4m4!3m3!8m2!3d38.4938!4d38.4443?entry=ttu",
+    },
+    {
+      location: "Lake Superior, North America",
+      lat: "46°41'10.2 N",
+      lng: "90°23'11.5 W",
+      link: "https://maps.app.goo.gl/PFWzBnFTCXwpGDKJ8",
+    },
   ],
   k: [
     {
@@ -146,12 +212,50 @@ export const letterData: Record<
     },
   ],
   l: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Nusantara, Indonesia",
+      lat: "0°58'18.1 S",
+      lng: "116°41'58.9 E",
+      link: "https://www.google.com/maps/place/0%C2%B058'18.1%22S+116%C2%B041'58.9%22E/@-0.9725262,116.6947405,2641m/data=!3m1!1e3!4m12!1m7!3m6!1s0x2df6c93c8bb52e15:0x238de9438b4d18a8!2z64iE7IKw7YOA6528!8m2!3d-0.9746384!4d116.7094308!16s%2Fm%2F03bw_z_!3m3!8m2!3d-0.971695!4d116.699694?entry=ttu",
+    },
+    {
+      location: "Xinjiang, China",
+      lat: "40°04'02.8 N",
+      lng: "77°40'00.7 E",
+      link: "https://www.google.com/maps/place/40%C2%B004'02.8%22N+77%C2%B040'00.7%22E/@40.0613207,77.5606821,20116m/data=!3m1!1e3!4m7!1m2!2m1!1sTien+Shan+mountains!3m3!8m2!3d40.067453!4d77.666852?entry=ttu",
+    },
+    {
+      location: "Regina, Saskatchewan, Canada",
+      lat: "50°11'51.7 N",
+      lng: "104°17'15.4 W",
+      link: "https://maps.app.goo.gl/iVppLmYh44QxDr9c9",
+    },
+    {
+      location: "Regina, Saskatchewan, Canada",
+      lat: "50°12'41.3 N",
+      lng: "104°43'38.1 W",
+      link: "https://maps.app.goo.gl/Aa6mwzvmMJXRw3Gf8",
+    },
   ],
   m: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Shenandoah River, Virginia",
+      lat: "38°46'32.2 N",
+      lng: "78°24'07.1 W",
+      link: "https://www.google.com/maps/place/Shenandoah+River/@38.7773712,-78.4192219,6454m/data=!3m1!1e3!4m7!3m6!1s0x89b6047d550cb7f7:0x83e4ccba6e682c02!4b1!8m2!3d39.1019371!4d-77.9660084!16zL20vMDMzejYz?entry=ttu",
+    },
+    {
+      location: "Potomac River",
+      lat: "??",
+      lng: "??",
+      link: "",
+    },
+    {
+      location: "Tian Shan Mountains, Kyrgyzstan",
+      lat: "42°07'16.4 N",
+      lng: " 80°02'44.1 E",
+      link: "https://maps.app.goo.gl/Ja3ZAHeuTNCRNFMN9",
+    },
   ],
   n: [
     { location: "xyz", lat: "", lng: "" },
