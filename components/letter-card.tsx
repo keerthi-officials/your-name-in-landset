@@ -39,7 +39,6 @@ export function LetterCard({
           {letter.toUpperCase()}
         </p>
       </div>
-      test
     </div>
   );
 }
