@@ -22,6 +22,7 @@ export function LetterCard({
         : "text-xl px-3 py-1";
   return (
     <div
+    key={letter}
       className="relative group cursor-pointer flex-1 min-w-0 aspect-8/19 max-w-46 hover:scale-108 duration-400 transition-all"
       onClick={onClick}
       onMouseEnter={onHover}
@@ -31,7 +32,6 @@ export function LetterCard({
         alt={`${letter}_${variantIndex}`}
         fill
         loading="eager"
-        sizes="100vw"
         className="object-cover rounded-sm"
       />
       <div className="absolute inset-0 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-end p-2">
