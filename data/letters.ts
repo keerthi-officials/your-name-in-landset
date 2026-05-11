@@ -1,6 +1,6 @@
 export const letterData: Record<
   string,
-  { location: string; lat: string; lng: string; link?: string }[]
+  { location: string; lat: string; lng: string; link: string }[]
 > = {
   a: [
     {
@@ -258,55 +258,233 @@ export const letterData: Record<
     },
   ],
   n: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Yapacani, Bolivia",
+      lat: "17°18'29.7 S",
+      lng: "63°53'19.0 W",
+      link: "https://maps.app.goo.gl/5rXL3mESWj2YsTWj6",
+    },
+    {
+      location: "Yapacani, Bolivia",
+      lat: "17°18'29.7 S",
+      lng: "63°53'19.0 W",
+      link: "https://maps.app.goo.gl/5rXL3mESWj2YsTWj6",
+    },
+    {
+      location: "São Miguel do Araguaia, Brazil",
+      lat: "12°56'44.3 S",
+      lng: "50°29'42.0 W",
+      link: "https://maps.app.goo.gl/1HtmMe82x2XdabT99",
+    },
   ],
   o: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Crater Lake, Oregon",
+      lat: "42°56'10.0 N",
+      lng: "122°06'04.7 W",
+      link: "https://maps.app.goo.gl/S9sJeZ6iHBVJuGu37",
+    },
+    {
+      location: "Manicouagan Reservoir",
+      lat: "51°22'42.4 N",
+      lng: "68°40'27.2 W",
+      link: "https://maps.app.goo.gl/E6Rn3yeQkYuagviG7",
+    },
   ],
   p: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Mackenzie River Delta, Canada",
+      lat: "68°12'54.4 N",
+      lng: "134°23'15.3 W",
+      link: "https://www.google.com/maps/place/68%C2%B012'54.4%22N+134%C2%B023'15.3%22W/@68.2079858,-134.5221453,23980m/data=!3m1!1e3!4m4!3m3!8m2!3d68.215103!4d-134.387585?entry=ttu",
+    },
+    {
+      location: "Riberalta, Bolivia",
+      lat: "10°52'44.0 S",
+      lng: "66°02'52.0 W",
+      link: "https://maps.app.goo.gl/sW32pDeYpN3JQQT18",
+    },
   ],
   q: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Lonar Crater, India",
+      lat: "19°58'36.8 N",
+      lng: "76°30'30.6 E",
+      link: "https://maps.app.goo.gl/vNSZuSEAV22k2UScA",
+    },
+    {
+      location: "Mount Tambora, Indonesia",
+      lat: "8°14'31.3 S",
+      lng: "117°59'31.2 E",
+      link: "https://maps.app.goo.gl/1KcvrspMtYDs1qSi8",
+    },
   ],
   r: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Lago Menendez, Argentina",
+      lat: "42°41'14.9 S",
+      lng: "71°52'21.7 W",
+      link: "https://www.google.com/maps/place/42%C2%B041'14.9%22S+71%C2%B052'21.7%22W/@-42.6921215,-71.9452812,30666m/data=!3m1!1e3!4m12!1m7!3m6!1s0x961c217407edac45:0xb660993af48f583f!2sLake+Men%C3%A9ndez!8m2!3d-42.6849165!4d-71.8274846!16s%2Fg%2F120l2rkc!3m3!8m2!3d-42.687479!4d-71.872688?entry=ttu",
+    },
+    {
+      location: "Province of Sondrio, Italy",
+      lat: "46°17'38.3 N",
+      lng: "9°25'14.5 E",
+      link: "https://maps.app.goo.gl/MDCo37rLRQGCvDJp8",
+    },
+    {
+      location: "Florida Keys",
+      lat: "24°45'30.4 N",
+      lng: "81°31'53.6 W",
+      link: "https://maps.app.goo.gl/CfSnUcNriFtWBrEQ8",
+    },
+    {
+      location: "Canyonlands National Park, Utah",
+      lat: "38°26'27.8 N",
+      lng: "109°45'03.3 W",
+      link: "https://maps.app.goo.gl/Bt89EafENbXXLmPPA",
+    },
   ],
   s: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Mackenzie River",
+      lat: "68°25'01.0 N",
+      lng: "134°08'35.2 W",
+      link: "https://www.google.com/maps/place/Tuktoyaktuk,+NT,+Canada/@68.408019,-134.2820739,33486m/data=!3m1!1e3!4m6!3m5!1s0x5113cb935c41b04d:0x1155e872d8421ea3!8m2!3d69.445358!4d-133.034181!16zL20vMDNwOXF4?entry=ttu",
+    },
+    {
+      location: "N’Djamena, Chad",
+      lat: "12°00'27.7 N",
+      lng: "15°03'46.2 E",
+      link: "https://www.google.com/maps/place/12%C2%B000'27.7%22N+15%C2%B003'46.2%22E/@12.0046806,15.0451832,17158m/data=!3m1!1e3!4m13!1m8!3m7!1s0x11196053fc686ffb:0xf9442c3f64221374!2sDigangali,+Chad!3b1!8m2!3d12.0619444!4d15.0727778!16s%2Fg%2F11nmsbmc9w!3m3!8m2!3d12.007689!4d15.062824?entry=ttu",
+    },
+    {
+      location: "Rio Chapare, Bolivia",
+      lat: "16°56'04.7 S",
+      lng: "65°13'44.2 W",
+      link: "https://maps.app.goo.gl/MRR8oJSdDTTBVP4z5",
+    },
   ],
   t: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Liwa, United Arab Emirates",
+      lat: "23°10'30.0 N",
+      lng: "53°47'52.8 E",
+      link: "https://www.google.com/maps/place/23%C2%B010'30.0%22N+53%C2%B047'52.8%22E/@23.2263071,53.5999631,91189m/data=!3m1!1e3!4m4!3m3!8m2!3d23.175!4d53.798?entry=ttu",
+    },
+    {
+      location: "Lena River Delta",
+      lat: "72°52'40.3 N",
+      lng: "129°31'51.5 E",
+      link: "https://www.google.com/maps/place/72%C2%B052'40.3%22N+129%C2%B031'51.5%22E/@72.787563,128.6593921,85488m/data=!3m1!1e3!4m12!1m7!3m6!1s0x5b1ba3a5c11a7b29:0x90c8b3da45330bba!2sLaptev+Sea!8m2!3d75.9645208!4d126.6348815!16zL20vMDI4bmRz!3m3!8m2!3d72.877867!4d129.530964?entry=ttu",
+    },
   ],
   u: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Canyonlands National Park, Utah",
+      lat: "38°16'09.1 N",
+      lng: "109°55'32.7 W",
+      link: "https://www.google.com/maps/place/38%C2%B016'09.1%22N+109%C2%B055'32.7%22W/@38.2749009,-110.0024741,14590m/data=!3m1!1e3!4m12!1m7!3m6!1s0x8747e1ee4518a6a9:0x15a452a9c502e6aa!2sCanyonlands+National+Park!8m2!3d38.2135733!4d-109.9025345!16zL20vMDF3cTgz!3m3!8m2!3d38.269198!4d-109.925762?entry=ttu",
+    },
+    {
+      location: "Bamforth National Wildlife Refuge, Wyoming",
+      lat: "41°19'26.0 N",
+      lng: "105°46'13.9 W",
+      link: "https://www.google.com/maps/place/Bamforth+National+Wildlife+Refuge/@41.2734513,-106.0072281,91289m/data=!3m1!1e3!4m12!1m5!3m4!2zNDHCsDIwJzE3LjUiTiAxMDXCsDQ4JzUwLjAiVw!8m2!3d41.3382!4d-105.8139!3m5!1s0x8768812b9b07cc19:0x839bb585413c393f!8m2!3d41.3777918!4d-105.7317396!16zL20vMGJnMGY5?entry=ttu",
+    },
   ],
   v: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Cellina and Meduna Rivers, Italy",
+      lat: "46°06'41.4 N",
+      lng: "12°45'26.6 E",
+      link: "https://www.google.com/maps/place/46%C2%B006'41.4%22N+12%C2%B045'26.6%22E/@46.1123599,12.6682228,45913m/data=!3m1!1e3!4m4!3m3!8m2!3d46.1115!4d12.7574?entry=ttu",
+    },
+    {
+      location: "New South Wales, Australia",
+      lat: "34°17'11.2 S",
+      lng: "150°49'32.4 E",
+      link: "https://maps.app.goo.gl/fxE1ik8qzdANidxT8",
+    },
+    {
+      location: "Padma River, Bangladesh",
+      lat: "23°21'03.9 N",
+      lng: "90°33'06.9 E",
+      link: "https://maps.app.goo.gl/sYQHYd8exhDsr5SQ7",
+    },
+    {
+      location: "Mapleton, Maine",
+      lat: "46°32'40.5 N",
+      lng: "68°15'06.4 W",
+      link: "https://maps.app.goo.gl/8LF7PAqxNbS6egPMA",
+    },
   ],
   w: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Ponoy River, Russia",
+      lat: "67°02'10.9 N",
+      lng: "40°20'19.3 E",
+      link: "https://maps.app.goo.gl/z6n8HY91r7f4kv9G7",
+    },
+    {
+      location: "La Primavera, Columbia",
+      lat: "5°26'57.9 N",
+      lng: "69°47'57.0 W",
+      link: "https://maps.app.goo.gl/z6n8HY91r7f4kv9G7",
+    },
   ],
   x: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Wolstenholme Fjord, Greenland",
+      lat: "76°44'03.8 N",
+      lng: "68°36'23.3 W",
+      link: "https://www.google.com/maps/place/76%C2%B044'03.8%22N+68%C2%B036'23.3%22W/@76.769809,-69.2574316,78627m/data=!3m1!1e3!4m12!1m7!3m6!1s0x4e363cf35b4fee17:0x41fd8c3cf71f8024!2sWolstenholme+Fjord!8m2!3d76.6170514!4d-69.0542596!16zL20vMGJqd3dn!3m3!8m2!3d76.734386!4d-68.606478?entry=ttu",
+    },
+    {
+      location: "Davis Straight, Greenland",
+      lat: "62°14'14.8 N",
+      lng: "49°34'49.9 W",
+      link: "https://www.google.com/maps/place/62%C2%B014'14.8%22N+49%C2%B034'49.9%22W/@62.2576372,-50.2124668,119807m/data=!3m1!1e3!4m4!3m3!8m2!3d62.237433!4d-49.580516?entry=ttu",
+    },
+    {
+      location: "Sermersooq Municipality, Greenland",
+      lat: "66°37'05.2 N",
+      lng: "36°22'05.9 W",
+      link: "https://maps.app.goo.gl/1P9vKFiCy3PkQSnY8",
+    },
   ],
   y: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Bíobío River, Chile",
+      lat: "37°16'02.4 S",
+      lng: "72°43'42.9 W",
+      link: "https://www.google.com/maps/place/37%C2%B016'02.4%22S+72%C2%B043'42.9%22W/@-37.2890838,-72.7147119,11.54z/data=!4m12!1m7!3m6!1s0x9612d6239f78768f:0x62a4a840164470ae!2zQsOtb2LDrW8gUml2ZXI!8m2!3d-37.6673574!4d-72.163673!16zL20vMDZiZmdu!3m3!8m2!3d-37.267341!4d-72.728582?entry=ttu",
+    },
+    {
+      location: "Estuario de Virrila, Peru",
+      lat: "5°51'53.4 S",
+      lng: "80°43'51.6 W",
+      link: "https://www.google.com/maps/place/5%C2%B051'53.4%22S+80%C2%B043'51.6%22W/@-5.8409555,-80.83445,12.13z/data=!4m12!1m7!3m6!1s0x90497ce60f8e3bc1:0x703ee5f60c9c907d!2sEstuario+de+Virrila!8m2!3d-5.7988889!4d-80.8647222!16s%2Fg%2F12ls2ksqv!3m3!8m2!3d-5.864833!4d-80.730992?entry=ttu",
+    },
+    {
+      location: "Ramsay, New Zealand",
+      lat: "43°31'19.4 S",
+      lng: "170°49'53.7 E",
+      link: "https://maps.app.goo.gl/vNfFAsk4VFF6pnTo7",
+    },
   ],
   z: [
-    { location: "xyz", lat: "", lng: "" },
-    { location: "xyz", lat: "", lng: "" },
+    {
+      location: "Primavera do Leste, Brazil",
+      lat: "15°29'38.9 S",
+      lng: "54°20'27.5 W",
+      link: "https://www.google.com/maps/place/15%C2%B029'38.9%22S+54%C2%B020'27.5%22W/@-15.4976757,-54.3580248,14215m/data=!3m1!1e3!4m13!1m8!3m7!1s0x9377238863d94d8d:0xac7e6dab9bd8285e!2sPrimavera+do+Leste+-+State+of+Mato+Grosso,+Brazil!3b1!8m2!3d-15.5605334!4d-54.2950533!16s%2Fm%2F09rs3h3!3m3!8m2!3d-15.494126!4d-54.34096?entry=ttu",
+    },
+    {
+      location: "Mohammed Boudiaf, Algeria",
+      lat: "34°59'19.3 N",
+      lng: "4°23'20.8 E",
+      link: "https://maps.app.goo.gl/iFZcewDgx7niUQCC9",
+    },
   ],
 };
